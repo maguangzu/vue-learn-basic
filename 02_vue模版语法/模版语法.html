@@ -20,6 +20,7 @@
        <h1>指令语法</h1>
        <!--v-bind绑定指令，就把下面的url当成一个js表达式去执行了-->
        <a v-bind:href="url.toUpperCase()" v-bind:x="x">百度一下</a>
+       <a v-bind:href="url" v-bind:xx="x">百度一下</a>
        <!-- v-bind: 还可以简写为: -->
        <a :href="url_taiwan" :x="x">google 台湾</a>
        <p>学校: <a :href="school.url.toString()">{{ school.name }}</a> </p>

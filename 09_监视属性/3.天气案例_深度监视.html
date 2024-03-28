@@ -76,18 +76,18 @@
                 }
             },
             //监测多级结构里面的属性 深度监视
-            // 'numbers.a':{
-            //     handler(){
-            //       console.log('a发生改变了')
-            //     }
-            // }
-            //深度监视numbers中的所有属性
-            numbers:{
-                deep: true, //监视多级结构的属性
+            'numbers.a':{
                 handler(){
-                    console.log('numbers 发生改变')
+                  console.log('a发生改变了')
                 }
             }
+            //深度监视numbers中的所有属性
+            // numbers:{
+            //     deep: true, //监视多级结构的属性
+            //     handler(){
+            //         console.log('numbers 发生改变')
+            //     }
+            // }
         }
     });
 
